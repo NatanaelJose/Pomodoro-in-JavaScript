@@ -1,14 +1,14 @@
-var start = document.getElementById('start');
-var reset = document.getElementById('reset');
-var stop = document.getElementById('pause');
+let start = document.getElementById('start');
+let reset = document.getElementById('reset');
+let stop = document.getElementById('pause');
 
-var wm = document.getElementById('w_minutes');
-var ws = document.getElementById('w-secunds');
+let wm = document.getElementById('w_minutes');
+let ws = document.getElementById('w-secunds');
 
-var bm = document.getElementById('b_minutes');
-var bs = document.getElementById('b-Secunds');
+let bm = document.getElementById('b_minutes');
+let bs = document.getElementById('b-Secunds');
 
-var startTimer;
+let startTimer;
 
 start.addEventListener('click', function(){
 	if(startTimer == undefined){
