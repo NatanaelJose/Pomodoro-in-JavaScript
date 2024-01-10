@@ -3,33 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" context="width-device-width, initial-scale-1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="style.css">
-	<title>POMODORE</title>
-	<h1>Interface</h1>
+	<title>Relógio Pomodoro</title>
 </head>
 <body>
 	<div id="container">
-		<p id="work" class="label">Work</p>
-		<p id="break" class="label">Break</p>
-		<p id="cycles" class="label">Cycles</p>
-
-		<div id="Work-timer" class="timer">
-			<p id="w_minutes">25</p>
-			<p class="semicolon">:</p>
-			<p id="w-secunds">00</p>
+		<h1>Relogio Pomodoro</h1> 
+		<div class="names">
+			<p class="noun" id="work" >Work</p>
+			<p class="noun" id="break" >Break</p>
+			<p class="noun" id="cycles" >Cycles</p>
 		</div>
 
-		<p id="counter" class="timer">0</p>
-
-		<div id="break-timer" class="timer">
-			<p id="b_minutes">5</p>
-			<p class="simicolon">:</p>
-			<p id="b-Secunds">00</p>
+		<div class="times">
+			<div class="timer" id="Work-timer" >
+				<p id="w_minutes">25</p>
+				<p class="semicolon">:</p>
+				<p id="w-secunds">00</p>
+			</div>
+	
+			<p class="timer"id="counter" >0</p>
+	
+			<div class="timer" id="break-timer" >
+				<p id="b_minutes">5</p>
+				<p class="simicolon">:</p>
+				<p id="b-Secunds">00</p>
+			</div>
 		</div>
 
-		<button id="start" class="btn">Start</button>
-		<button id="pause" class="btn">Pause</button>
-		<button id="reset" class="btn">Reset</button>
+		<div class="buttons">
+			<button class="btns" id="start" >Start</button>
+			<button class="btns" id="pause" >Pause</button>
+			<button class="btns" id="reset" >Reset</button>
+		</div>
 	</div>
 
 	<script src="main.js"></script>
